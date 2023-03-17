@@ -10,7 +10,7 @@ console.clear()
 let fName = 'John'
 let lName = 'Walker'
 
-console.log(fName+ ' '+ lName);  // "John Walker"
+console.log(fName + ' ' + lName);  // "John Walker"
 
 console.log(fName.concat(lName)); // "JohnWalker"
 
