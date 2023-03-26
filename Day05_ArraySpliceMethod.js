@@ -1,5 +1,5 @@
 /*
-Arrays_Intro:
+Arrays:
 
 Arrays are just like Objects in JS
 Arrays are special type of objects
@@ -18,7 +18,7 @@ console.clear();
 
 
 
-const months = ['Jan','March', 'April', 'June'];
+const months = ['Jan', 'March', 'April', 'June'];
 //months.splice(1); // delete everything after the first index including the first index
 // inserts at index 1
 // console.log(months);  // ["Jan"]
@@ -36,16 +36,16 @@ const months = ['Jan','March', 'April', 'June'];
 // console.log(months);  // deletes April and June  ["Jan", "March"]
 
 //          startIndex, Delete Num, Item (inserted in startIndex)
-months.splice(2,1, 'May');  // will delete only 1 item at index 2 and insert May at index 2
+months.splice(2, 1, 'May');  // will delete only 1 item at index 2 and insert May at index 2
 console.log(months);  // ["Jan", "March", "May", "June"]
 
 
-months.splice(2,1, 'May', 'June', 'July', 'August');
+months.splice(2, 1, 'May', 'June', 'July', 'August');
 console.log(months); // can add multiple elements ["Jan", "March", "May", "June", "July", "August", "June"]
 
 
 // if i don't want to delete any ,and just add more data 
-months.splice(2,0, 'May', 'June', 'July', 'August');
+months.splice(2, 0, 'May', 'June', 'July', 'August');
 console.log(months); // ["Jan", "March", "May", "June", "July", "August", "May", "June", "July", "August", "June"]
 
 // Practice
@@ -59,31 +59,31 @@ splice(start, deleteCount, item1, item2, itemN)
 
 */
 
-var fruits = ['apple', 'orange', 'banana', false , 10]
+var fruits = ['apple', 'orange', 'banana', false, 10]
 
 console.log(fruits); // ["apple", "orange", "banana", false, 10]
 
-fruits.splice(2,1);
+fruits.splice(2, 1);
 console.log(fruits);  // ["apple", "orange", false, 10
 
 
-fruits.splice(1,0, 'kiwi', 'peach');
+fruits.splice(1, 0, 'kiwi', 'peach');
 console.log(fruits);  // ["apple", "kiwi", "peach", "orange", false, 10]
 
-fruits.splice(2,2, 'cherry', 'strawberry', 'appricot');
+fruits.splice(2, 2, 'cherry', 'strawberry', 'appricot');
 console.log(fruits);  // ["apple", "kiwi", "cherry", "strawberry", "appricot", false, 10]
 
 // startIndex = -1 means from the last
 // deleted item= 1
-fruits.splice(-1,1);
+fruits.splice(-1, 1);
 console.log(fruits); // ["apple", "kiwi", "cherry", "strawberry", "appricot", false]
 
 // NOTE: negative number means starting from the last index
-fruits.splice(-4,2);
+fruits.splice(-4, 2);
 console.log(fruits); // ["apple", "kiwi", "cherry", false, 10]
 
 // following means delete 0 item, insert tea, coffee at index -1
-fruits.splice(-1,0,'tea', 'coffee');
+fruits.splice(-1, 0, 'tea', 'coffee');
 console.log(fruits); // ["apple", "kiwi", "cherry", false, "tea", "coffee", 10]
 
 
