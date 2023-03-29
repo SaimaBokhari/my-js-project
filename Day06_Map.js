@@ -12,12 +12,12 @@ var numbers = [3, 56, 2, 48, 5]
 
 // 1. function to calculate items 
 
-function double(x){
-  return x*2;
+function double(x) {
+    return x * 2;
 }
 
 // Example
-const testArray = [5,6,7,8].map(double);
+const testArray = [5, 6, 7, 8].map(double);
 console.log(testArray);  // [10, 12, 14, 16]
 
 
@@ -35,10 +35,10 @@ console.log(newNumbers1);  // [6, 112, 4, 96, 10]
 
 const newNumbers2 = numbers.map(
 
-  function double(x){
-  return x*8;
-}
-  
+    function double(x) {
+        return x * 8;
+    }
+
 )
 console.log(newNumbers2); // [24, 448, 16, 384, 40]
 
@@ -49,15 +49,15 @@ multiply by 3
 and store in newNumbers3 array
 */
 
-const newNumbers3 = numbers.map(x => x*3);
+const newNumbers3 = numbers.map(x => x * 3);
 console.log(newNumbers3); // [9, 168, 6, 144, 15]
 
 // Without map function, how can we achieve same thing
-// let use for each loop
-// we have to create an empty container and then use push()... extra work 
+// lets use for each loop
+// it's gonna be a bit longer process... first we have to create an empty container and then use push()... extra work 
 const newNumbers4 = [];
 numbers.forEach(
-x => newNumbers4.push(x*3)
+    x => newNumbers4.push(x * 3)
 )
 console.log(newNumbers4); // [9, 168, 6, 144, 15]
 
