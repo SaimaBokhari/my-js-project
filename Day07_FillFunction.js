@@ -6,7 +6,7 @@ and returns a new array
 changes the original array and returns a new array at the same time
 */
 
-var nums = [5,3,7,3,-6,11]
+var nums = [5, 3, 7, 3, -6, 11]
 var filledWith1 = nums.fill(1);
 // changes the original array
 console.log(nums);  // [1, 1, 1, 1, 1, 1]
@@ -27,10 +27,10 @@ console.log(filledWithOrange);  // [1, 1, "Orange", "Orange", "Orange", 1]
 // fillNumbers(6); [1,2,3,4,5,6]
 // fillNumbers(10);[1,2,3,4,5,6,7,8,9,10]
 
-function fillNumbers(len){ 
-  return Array(len)  // creating array with the given length
-  .fill(0)  // starts with 0
-  .map((input,index)=>index+1)  // 0+1=>1  in every loop returns index+1 
+function fillNumbers(len) {
+    return Array(len)  // creating array with the given length
+        .fill(0)  // starts with 0
+        .map((input, index) => index + 1)  // 0+1=>1  in every loop returns index+1 
 }
 
 console.log(fillNumbers(3)); // [1, 2, 3]
